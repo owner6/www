@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<%- include('blocks/header') -%>
+
+<!-- Intro -->
+<section class="intro">
+  <div class="container">
+    <div class="intro__inner">
+      <div class="intro__content">
+        <h2 class="intro__subtitle">Hello i'm</h2>
+        <h1 class="intro__title">Vladyslav Onyshchenko</h1>
+        <div class="intro__text">Frontend Developer</div>
+          <div class="social">
+            <a class="social__link" target="_blank" href="https://t.me/Owner10">
+              <img src="images/icon-telegram.svg" alt="">
+            </a>
+            <a class="social__link" target="_blank" href="https://www.instagram.com/onishchenko893">
+              <img src="images/icon-instagram.svg" alt="">
+            </a>
+            <a class="social__link" target="_blank" href="https://www.facebook.com/anonymus25">
+              <img src="images/icon-facebook.svg" alt="">
+            </a>
+            <a class="social__link" target="_blank" href="https://github.com/owner6">
+              <img src="images/icon-github.svg" alt="">
+            </a>
+         </div>
+         <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+         <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+      </div>
+      <img class="intro__photo" src="images/photo.png" alt="">
+    </div><!-- /.intro__inner -->
+  </div><!-- /.container -->
+</section>
+
+<div class="works">
+  <div class="container">
+    <div class="works__nav"> <a class="works__nav-link" href="#" data-filter="all">All</a> <a class="works__nav-link" href="#" data-filter="app">App</a> <a class="works__nav-link" href="#" data-filter="website">Websites</a> <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a> </div>
+    <div class="portfolio__col" data-cat="website">
+      <div class="work" data-modal="#modal_project_2"> <img class="work__image" src="images/restoran-min.jpg" alt="">
+        <div class="work__content">
+          <div class="work__cat">category: website</div>
+          <div class="work__title"> Restaurant website <time class="work__date" datetime="2023-04-29 11:46">2023</time> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.portfolio -->
+  <div class="text-center"> <a class="btn  btn--sm" href="#">LOAD MORE WORK</a> </div>
+</div>
+<!-- /.container -->
+</div>
+<!-- /.works -->
+
+<!-- About -->
+<section class="about">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__photo"> <img class="img" src="images/designer_photo.png" alt=""> </div>
+      <div class="about__content">
+        <h3 class="about__title">about me</h3>
+        <h2 class="about__bigtitle">WHO AM I</h2>
+        <div class="about__text">
+          <p>I have extensive experience in solving computer and internet network issues. As an experienced technical support specialist, I am able to quickly resolve problems. I have knowledge of programming in HTML, CSS, JS, and am proficient in working with Git and Github. Currently, I am actively learning new web programming skills. I am able to work effectively in a team, collaborate with different departments, and find solutions for complex problems quickly. I am open to learning and improving my skills, and constantly working on self-improvement and development."</p>
+        </div> <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a> <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button> </div>
+      <!-- /.about__content -->
+    </div>
+    <!-- /.about__inner -->
+  </div>
+  <!-- /.container -->
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__credits">
+        <div class="footer__copyright"> &copy; 2023 </div>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/onishchenko893" target="_blank">
+            <img src="images/instagram-gray.svg" width="18" alt="">
+          </a> 
+          <a href="https://www.facebook.com/anonymus25" target="_blank">
+            <img src="images/fb-gray.svg" height="18" alt="">
+          </a> 
+        </div>
+      </div>
+      <!-- /.footer__credits -->
+      <nav class="footer__nav"> <a class="footer__nav-link  footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Hire me</a> </nav>
+    </div>
+    <!-- /.footer__inner -->
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- Modals -->
+<div class="modal" id="modal_project_1">
+  <div class="modal__dialog"> 
+    <button class="modal__close" type="button" data-close>
+      <img src="images/exit.svg" alt="Close">
+    </button>
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <div data-slider="slick">
+          <div> <img class="modal-work__photo" src="images/restoran-max.jpg" alt=""> </div>
+          <div> <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt=""> </div>
+        </div>
+      </div>
+      <div class="modal-work__content">
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">Project title</h3>
+          <div class="modal-work__info"> category <span class="modal-work__info-divider">|</span> 2023 </div>
+        </div>
+        <div class="modal-work__client">
+          <div class="modal-work__client-title">Client:</div>
+          <div class="modal-work__client-company">Creative Agency</div>
+        </div>
+        <div class="modal-work__text">
+          <p>gavnoLorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
+        </div>
+        <div class="modal-work__footer"> 
+          <button class="modal-work__btn slickPrev" type="button">
+            <img src="images/back.svg" height="11" alt="">
+              Previous
+          </button> 
+          <button class="modal-work__btn slickNext" type="button">
+              Next
+            <img src="images/next.svg" height="11" alt="">
+          </button> 
+        </div>
+      </div>
+      <!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+  </div>
+  <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal" id="modal_project_2">
+  <div class="modal__dialog"> 
+    <button class="modal__close" type="button" data-close>
+      <img src="images/exit.svg" alt="Close">
+    </button>
+    <div class="modal-work">
+      <div class="modal-work__preview">
+        <div data-slider="slick">
+          <div> <img class="modal-work__photo" src="images/restoran-max.jpg" alt=""> </div>
+          <div> <img class="modal-work__photo" src="images/restoran-max2.jpg" alt=""> </div>
+        </div>
+      </div>
+      <div class="modal-work__content">
+        <div class="modal-work__header">
+          <h3 class="modal-work__title">Restaurant site</h3>
+          <div class="modal-work__info"> category <span class="modal-work__info-divider">|</span> 2023 </div>
+        </div>
+        <div class="modal-work__client">
+          <div class="modal-work__client-title">Client:</div>
+          <div class="modal-work__client-company">-</div>
+        </div>
+        <div class="modal-work__text">
+          <p>The website was developed based on the Figma layout. The front-end development of the homepage was completed with responsiveness for different devices.</p>
+          <p></p>
+        </div>
+        <div class="modal-work__footer"> 
+          <button class="modal-work__btn slickPrev" type="button">
+            <img src="images/back.svg" height="11" alt="">
+              Previous
+          </button> 
+          <button class="modal-work__btn slickNext" type="button">
+              Next
+            <img src="images/next.svg" height="11" alt="">
+          </button> 
+        </div>
+      </div>
+      <!-- /.modal-work__content -->
+    </div>
+    <!--/.modal-work -->
+  </div>
+  <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal" id="modal_resume">
+  <div class="modal__dialog"> 
+    <button class="modal__close" type="button" data-close>
+      <img src="images/exit.svg" alt="Close">
+    </button>
+    <div class="modal__content">
+      <h3 class="modal__title  text-center">RESUME</h3>
+      <div class="text-center"> <a class="btn btn--thin" href="https://drive.google.com/file/d/164ZC_pzxLR764rk0trOKCVV1vtZCq-iQ/view?usp=share_link" target="_blank">DOWNLOAD PDF</a> </div>
+      <div class="timeline">
+        <div class="timeline__col  timeline__col--left">
+          <h4 class="timeline__title">EXPERIENCE</h4>
+          <div class="timeline__item"> <time class="timeline__date" datetime="03-21-2023">September 2022 - March 2023<b></b></time>
+            <h5 class="timeline__subtitle">Call center operator</h5>
+            <div class="timeline__position">ADELINA</div>
+            <div class="timeline__text">
+              <li>Handling incoming calls</li>
+              <li>Providing consultation to subscribers</li>
+              <li>Selling TV packages</li>
+              <li>Calling clients who do not use satellite TV</li>
+              <li>Resolving issues with setting up satellite tuners</li>
+            </div>
+          </div>
+          <div class="timeline__item"> <time class="timeline__date" datetime="08-21-2022">January 2022 - July 2022<b></b></time>
+            <h5 class="timeline__subtitle">Call center operator</h5>
+            <div class="timeline__position">Global Bilgi</div>
+            <div class="timeline__text">
+              <li>Handling incoming calls</li>
+              <li>Providing consultation to subscribers</li>
+              <li>Selling the company's tariffs and services</li>
+              <li>Writing official requests and inquiries if necessary</li>
+            </div>
+          </div>
+          <div class="timeline__item"> <time class="timeline__date" datetime="08-21-2021">August 2020 - December 2021<b></b></time>
+            <h5 class="timeline__subtitle">System administrator</h5>
+            <div class="timeline__position">JSC "Hlukhiv Bread Factory"</div>
+            <div class="timeline__text">
+              <li>Network equipment setup and configuration</li>
+              <li>Repairing computers and office equipment</li>
+              <li>Installing a video surveillance system</li>
+              <li>Procuring equipment</li>
+              <li>Participation in administrative activities</li>
+            </div>
+          </div>
+          <div class="timeline__item"> <time class="timeline__date" datetime="08-21-2020">April 2020 - August 2020.<b></b></time>
+            <h5 class="timeline__subtitle">Installation technician</h5>
+            <div class="timeline__position">Maxnet</div>
+            <div class="timeline__text">
+              <li>Cable laying</li>
+              <li>Connecting apartment subscribers to the Internet.</li>
+              <li>Customer service maintenance</li>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__col  timeline__col--right">
+          <h4 class="timeline__title">EDUCATION</h4>
+          <div class="timeline__item"> <time class="timeline__date" datetime="04-21-2014">2010 - 2014</time>
+            <h5 class="timeline__subtitle">Computer Engineering</h5>
+            <div class="timeline__position">Hlukhiv Agrotechnical Institute of Sumy National Agrarian University, Ukraine</div>
+          </div>
+          <h4 class="timeline__title">Skills</h4>
+          <div class="progress-bar">
+            <div class="progress-bar__item">
+              <div class="progress-bar__left">
+                <div class="progress-bar__title">Basic JavaScript</div>
+              </div>
+              <div class="progress-bar__right">
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__progress" style="width: 50%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar__item">
+              <div class="progress-bar__left">
+                <div class="progress-bar__title">
+                  Basic html+css
+                </div>
+              </div>
+              <div class="progress-bar__right">
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__progress" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar__item">
+              <div class="progress-bar__left">
+                <div class="progress-bar__title">
+                  Basic Git/Github
+                </div>
+              </div>
+              <div class="progress-bar__right">
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__progress" style="width: 50%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar__item">
+              <div class="progress-bar__left">
+                <div class="progress-bar__title">Basic Sysadmin</div>
+              </div>
+              <div class="progress-bar__right">
+                <div class="progress-bar__bar">
+                  <div class="progress-bar__progress" style="width: 50%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.progress-bar -->
+        </div>
+        <!-- /.timeline__col -->
+      </div>
+      <!-- /.timeline -->
+      <div class="text-center"> <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a> </div>
+    </div>
+    <!-- /.modal__content -->
+  </div>
+  <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal" id="modal_hire_me">
+  <div class="modal__dialog  modal__dialog--sm"> 
+    <button class="modal__close" type="button" data-close>
+      <img src="images/exit.svg" alt="Close">
+    </button>
+    <class="contact">
+      <div class="contact__left">
+        <h3 class="modal__title mb-0">LET'S TALK!</h3>
+        <h4 class="modal__subtitle">CALL ME OR WRITE</h4>
+        <ul class="contact__info">
+          <li class="contact__info-item"> <img class="contact__info-icon" src="images/call.svg" alt=""> (099) 53 56030 </li>
+          <li class="contact__info-item"> <img class="contact__info-icon" src="images/mail.svg" alt=""> owner1147@gmail.com </li>
+        </ul>
+
+        <div>
+          <form class="" method="post">
+            <label class="form__label">Ваше имя</label>
+            <input class="form__input" type="text">
+           
+            <label class="form__label">Ваш E-mail</label>
+            <input class="form__input" type="text">
+
+              <label class="form__label">Сообщение</label>
+              <textarea class="form__textarea" type="text" name="comment" cols="35" rows="5" style="width: 100%; height: 98px;"></textarea>
+              <br><button class="btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <!-- /.contact__left -->
+     
+    </div>
+    <!-- /.contact -->
+  </div>
+  <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
